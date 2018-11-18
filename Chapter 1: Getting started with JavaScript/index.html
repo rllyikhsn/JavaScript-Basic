@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Console.log, DOM.API, Wndw.Alert, Wndw.Prompt, Wndw.Confirm,</title>
+</head>
+<body>
+    <!-- Console Log -->
+    <script>
+        var Nama = "Rully Ikhsan", Kelas = "4KA14";
+        console.log("Nama adalah : %s, Kelas : %s", Nama, Kelas);
+    </script>
+
+    <!-- Document Object Model -->
+    <p id="dom"></p>
+    <script>
+        document.getElementById("dom").textContent = "Hello World !";
+    </script>
+
+    <h1>Menambahkan element</h1>
+    <script>
+        /* 
+        membuat variabel element dengan perintah dokumen menabahkan
+        elemen paragraph
+        */
+        var element = document.createElement('p');
+        /* memanggil variabel element untuk memasukkan content */
+        element.textContent = "Ini elemen terbaru !";
+        /* menyisipkan variabel element kedalam document body */
+        document.body.appendChild(element);
+    </script>
+
+    <!-- Window Alert -->
+    <script>
+        window.alert("Selamat Datang Di Chapter 1");
+        alert("Siap Sukses !");
+    </script>
+
+    <!-- Window Prompt -->
+    <script>
+        var umur = prompt("Berapa Umur Kamu ?");
+        console.log("umur anda : ", umur);
+        var elementumur = document.createElement('p');
+        element.textContent = umur;
+        document.body.appendChild(elementumur);
+    </script>
+
+    <!-- Window Confirm -->
+    <script>
+        pemilihan = window.confirm("Apakah Kamu Bersedia ?");
+        if (pemilihan == true) {
+            console.log("Anda Bersedia");
+        }else{
+            console.log("Anda Tidak Bersedia");
+        }
+    </script>
+
+    <!-- insert image -->
+    <script>
+        var img = new Image();
+        img.src = 'https://i.ytimg.com/vi/zecueq-mo4M/maxresdefault.jpg';
+        document.body.appendChild(img);
+    </script>
+</body>
+</html>
